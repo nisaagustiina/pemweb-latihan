@@ -1,0 +1,13 @@
+h1{
+	font-family: arial, verdana, sans-serif;
+    font-size: 100px;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+p{
+	font-family: helvetica,serif;
+	line-height: 2em;
+}
+
+/*shorthand misal font : font style,font variant,font weight,font size,line height,font family */

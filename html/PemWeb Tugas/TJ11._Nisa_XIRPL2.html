@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsheet11.1</title>
+</head>
+<body>
+<script>
+	function fungsi()
+	{
+	var a = parseFloat(document.form.a.value);
+	var b = parseFloat(document.form.b.value);
+	var hasil = a*b;
+	document.form.c.value=hasil;
+	return hasil;
+	}
+</script>
+<form name="form">
+<p>Contoh fungsi</p>
+<p> masukan angka ke 1 : <input type="text" name="a"></p>
+<p>masukan angka ke 2 : <input type="text" name="b"></p>
+<input type="text" name="c" value="hasil" disabled="">
+<input type="button" value="jumlah" onclick="fungsi()">
+</form>
+<br><br>
+
+<script>
+	function hitungg()
+	{
+		var panjang = parseFloat(document.fform.p.value);
+		var lebar = parseFloat(document.fform.l.value);
+		var luas = panjang * lebar;
+		document.fform.ll.value=luas;
+		return luas;
+	}
+</script>
+
+<form name="fform">
+	<p>Masukan panjang : <input type="text" name="p"></p>
+	<p>Masukan lebar : <input type="text" name="l"></p>
+	<input type="text" name="ll" value="luas" disabled="">
+	<input type="button" value="hitung" onclick="hitungg()">
+</form>
+</body>
+</html>

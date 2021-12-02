@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsheeet12.1</title>
+</head>
+<body>
+<script>
+	function segiempat()
+	{
+		this.p = 0;
+		this.l = 0;
+		this.t = 0;
+		this.hitungvolume = function()
+			document.fform.hasil.value=volume;
+			return volume;
+	}
+	var limas = new segiempat();
+	limas.p = parseFloat(document.fform.ip.value);
+	limas.l = parseFloat(document.fform.il.value);
+	limas.t = parseFloat(document.fform.it.value);
+</script>
+
+<form name="fform">
+<p>Masukan panjang : <input type="text" name="ip"></p>
+<p>Masukan lebar : <input type="text" name="il"></p>
+<p>Masukan tinggi : <input type="text" name="it"></p>
+<input type="text" name="hasil" value="volume" disabled="">
+<input type="button" value="hitung" onclick="limas.volume()">
+</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script> 
+	function hitung()
+	{
+		var quis = parseFloat(document.form1.iquis.value);
+		var tugas = parseFloat(document.form1.itugas.value);
+		var uts = parseFloat(document.form1.iuts.value);
+		var uas = parseFloat(document.form1.iuas.value);
+		var ip = "";
+		var ket = "";
+
+		var nilai = (0.10*quis) + (0.20*tugas) + (0.30*uts) + (0.40*uas);
+		if ((nilai>80) && (nilai<=100))
+		{
+			ip = "A";
+			ket = "Lulus dengan sangat baik";
+		}
+		else if ((nilai>70) && (nilai<=80))
+		{
+			ip = "B";
+			ket = "Lulus dengan baik";
+		}
+		else if ((nilai>60) && (nilai<=70))
+		{
+			ip = "C";
+			ket = "Lulus dengan cukup";
+		}
+		else if ((nilai>40) && (nilai<=60))
+		{
+			ip = "D";
+			ket = "Lulus dengan kurang";
+		}
+		else
+		{
+			ip="E";
+			ket = "Tidak Lulus";
+		}
+
+		document.form1.oip.value=ip;
+		document.form1.oket.value=ket;
+
+	}
+</script>
+
+<form name="form1">
+	<table border="1" cellspacing="0">
+		<tr>
+			<td colspan="4"><h2>Menghitung Indeks Prestasi</h2></td>
+		</tr>
+		<tr>
+			<td>Quis(10%) : <input type="text" name="iquis"></td>
+			<td>Tugas(20%) : <input type="text" name="itugas"></td>
+			<td>UTS(30%) : <input type="text" name="iuts"></td>
+			<td>UAS(40%) : <input type="text" name="iuas"></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="button" value="hitung" onclick="hitung()"> <input type="button" value="reset"></td>
+		</tr>
+		<tr>
+			<td>Indeks Prestasi : <input type="text" name="oip"></td>
+			<td>Ket : <input type="text" name="oket"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

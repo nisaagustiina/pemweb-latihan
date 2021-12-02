@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function tanyabulan()
+	{
+		var bln = parseFloat(document.fform.bln.value);
+		var bulan = " ";
+		switch (bln)
+		{
+		case 1 : bulan = "Bulan ke 1 adalah Januari ";
+		break;
+		case 2 : bulan = "Bulan ke 2 adalah Februari ";
+		break;
+		case 3 : bulan = "Bulan ke 3 adalah Maret ";
+		break;
+		case 4 : bulan = "Bulan ke 4 adalah April ";
+		break;
+		case 5 : bulan = "Bulan ke 5 adalah Mei ";
+		break;
+		case 6 : bulan = "Bulan ke 6 adalah Juni ";
+		break;
+		case 7 : bulan = "Bulan ke 7 adalah Juli ";
+		break;
+		case 8 : bulan = "Bulan ke 8 adalah Agustus ";
+		break;
+		case 9 : bulan = "Bulan ke 9 adalah September ";
+		break;
+		case 10 : bulan = "Bulan ke 10 adalah Oktober ";
+		break;
+		case 11 : bulan = "Bulan ke 11 adalah November ";
+		break;
+		case 12 : bulan = "Bulan ke 12 adalah Desember ";
+		break;
+		default : bulan = "Anda salah mengisi";
+		break;
+		}
+		alert(bulan);
+	}
+</script>
+
+<form name="fform">
+	<h2>Pencarian Bulan</h2>
+	<p>Masukan bil ke [1-12] : <input type="text" name="bln"></p>
+	<input type="button" value="cari" onclick="tanyabulan()">
+	<input type="button" value="ulang">
+</form>
+</body>
+</html>

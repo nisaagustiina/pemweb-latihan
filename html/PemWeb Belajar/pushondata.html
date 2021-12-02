@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Push On Data</title>
+</head>
+<body>
+<h2>Contoh array push</h2>
+<p>push digunakan untuk menambah data pada bagian akhir sebuah array</p>
+<form name="fform">
+	<input type="text " id="text" name="text" placeholder="Masukan data">
+    <input type="button" value="tambah" onclick="pushdata()">
+    <p id="tampil">data akan tampil disini</p>
+</form>
+
+<script >
+	var fruits = [];
+
+	function pushdata(){
+		fruits.push(document.fform.text.value);
+		document.getElementById("tampil").innerHTML="Data yang anda masukan " + fruits;
+	}
+</script>
+</body>
+</html>

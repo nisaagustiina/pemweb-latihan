@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pop</title>
+</head>
+<body>
+	<h2>Contoh array pop</h2>
+<p>pop digunakan untuk menghapus data terakhir pada sebuah array</p>
+<form name="fform">
+	<input type="button" value="hapus" onclick="myfunction()">
+</form>
+<p id="tampil"></p>
+
+<script>
+	var fruits =["banana","orange","apple","mango"];
+	document.getElementById("tampil").innerHTML=fruits;
+
+	function myfunction(){
+		fruits.pop();
+		document.getElementById("tampil").innerHTML=fruits;
+	}
+</script>
+</body>
+</html>

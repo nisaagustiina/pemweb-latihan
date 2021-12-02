@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>penjumlahan</title>
+</head>
+<body>
+<script>
+	function hitung(){
+		var a = parseInt(document.getElementById('a').value);
+		var b = parseInt(document.getElementById('b').value);
+		var hasil = a+b;
+		document.getElementById("hasil").value=hasil;
+	}
+</script>
+<form>
+	<input type="text" id="a" placeholder="angka 1"><br>
+	<input type="text" id="b" placeholder="angka 2"><br>
+	<input type="text" id="hasil" placeholder="hasil" disabled=""><br>
+	<input type="button" id="button" value="hitung" onclick="hitung()">
+</form>
+</body>
+</html>

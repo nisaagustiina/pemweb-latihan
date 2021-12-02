@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script >
+	function hitungtotal()
+	{
+		var nama = (document.fform.nama.value);
+		var tujuan = (document.fform.tujuan.value);
+		var jml = parseFloat(document.fform.jml.value);
+		var ht = 0.0;
+		var sub = 0.0;
+		var diskon = 0.0;
+		var total = 0.0;
+
+		if (tujuan=="jakarta")
+		{
+			ht=100000;
+		}
+		else if (tujuan=="cirebon")
+		{
+			ht=150000;
+		}
+		else (tujuan=="tasikmalaya")
+		{
+			ht=200000;
+		}
+		sub = jml*ht;
+
+		if(document.fform.member.checked==true)
+		{
+			diskon=0.10*sub;
+		}
+		else
+		{
+			diskon=0.0;
+		}
+		total=sub-diskon;
+		document.fform.otiket.value=eval(ht);
+		document.fform.osub.value=eval(sub);
+		document.fform.odiskon.value=eval(diskon);
+		document.fform.ototal.value=eval(total);
+	}
+</script>
+
+<form name="fform">
+	<table border="1" align="center" width="70%" cellspacing="0">
+		<tr>
+			<td width="70%" colspan="2">
+			<h2 align="center">Katapang travel</h2>
+			</td>
+		</tr>
+		<tr>
+			<td width="35%">
+				Nama : <input type="text" size="20" name="nama"><br>
+				Tujuan : <select name="tujuan" size="1">
+					<option value="jakarta">jakarta</option>
+					<option value="cirebon">cirebon</option>
+					<option value="tasikmalaya">tasikmalaya</option>
+				</select><br>
+				Jumlah tiket : <input type="text" size="10" name="jml"><br>
+				Member : <input type="checkbox" name="member" >ya<br>
+			</td>
+			<td width="35%">
+				harga tiket : <input type="text" size="10" name="otiket"><br>
+				Sub total : <input type="text" size="10" name="osub"><br>
+				Diskon : <input type="text" size="10" name="odiskon"><br>
+				total bayar : <input type="text" size="10" name="ototal"><br>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%" colspan="2">
+				<center>
+					<input type="button" value="hitung" onclick="hitungtotal()">
+					<input type="reset" value="ulang">
+				</center>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

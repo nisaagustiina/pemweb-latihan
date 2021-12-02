@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsheet5.1</title>
+	<style>
+	fieldset{
+	width: 20px;
+	border: solid lightgreen;
+	background-color: cyan;
+}
+legend{
+	background-color: #ffc0cb;
+	font-family: Comic Sans MS;
+	font-style: 14pt;
+}
+form{
+	width: 600px;
+}
+input{
+	border: solid 1px lightgreen;
+}
+input[type=radio]{
+	display: none;
+}
+input[type=radio]+label:before {
+	content: "";
+	margin: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 8px;
+	background-color: cyan;
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+input[type=radio]:checked+label:before {
+	content: "\2022"; /*bullet*/
+	color: white;
+	background-color: grey;
+	font-size: 3em;
+	text-align: center;
+	line-height: 15px;
+	text-shadow: 0px 0px 1px red;
+}
+input[type=checkbox] {
+	display: none;
+}
+input[type=checkbox]+label:before {
+	content: "";
+	margin: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 8px;
+	background-color: cyan;
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+	border-radius: 4px;
+}
+input[type=checkbox]:checked+label:before {
+	content: "\2714"; /*thick*/
+	color: mediumspringgreen;
+	background-color: navy;
+	text-align: center;
+	line-height: 15px;
+	text-shadow: 0px 0px 3px red;
+}
+.button{
+	background: royalblue;
+}
+</style>
+</head>
+<body>
+	<fieldset>
+	<legend>Universitas Patilasan IKIP</legend>
+<form method="post" action="#">
+	<p>Nama</p>
+	<input type="text" name="nama">
+	<p>Asal Sekolah</p>
+	<input type="text" name="asal"><br>
+	<input type="radio" id="jk" name="jk" value="pria"><label for="jk">Pria</label><br>
+	<input type="radio" id="jk1" name="jk1" value="wanita"><label for="jk1">Wanita</label>
+	<p>Agama</p>
+	<select>
+		<option value="pilih" placeholder="pilih">--pilih--</option>
+		<option value="islam">islam</option>
+		<option value="kristen">kristen</option>
+		<option value="katholik">katholik</option>
+		<option value="hindu">hindu</option>
+		<option value="budha">budha</option>
+	</select>
+	<p>nilai</p>
+	<input type="text" name="mtk" placeholder="Matematika" required="matematika">
+	<input type="text" name="ind" placeholder="Bahasa Indonesia" required="b.indonesia">
+	<input type="text" name="ing" placeholder="Bahasa Inggris" required="bahasa inggris">
+	<p>fakultas pilihan</p>
+	<select>
+		<option value="pilih" placeholder="pilih">--pilih--</option>
+		<option value="fakultas ilmu pendidikan">fakultas ilmu pendidikan</option>
+		<option value="fakultas pendidikan bahasa dan seni">fakultas pendidikan bahasa dan seni</option>
+		<option value="fakultas pendidikan olahraga dan kesehatan">fakultas pendidikan olahraga dan kesehatan</option>
+		<option value="fakultas pendidikan teknik dan kejuruan">fakultas pendidikan teknik dan kejuruan</option>
+		<option value="fakultas pendidikan matematika dan ilmu pengetahuan alam">fakultas pendidikan matematika dan ilmu pengetahuan alam</option>
+		<option value="fakultas pendidikan ilmu pengetahuan sosial">fakultas pendidikan ilmu pengetahuan sosial</option>
+		<option value="fakultas pendidikan ekonomi dan bisnis">fakultas pendidikan ekonomi dan bisnis</option>
+	</select>
+	<p>anda menyetujui persyaratan yang berlaku</p>
+	<input type="checkbox" id="setuju" name="setuju" value="setuju"><label for="setuju">setuju</label><br>
+	<button type="submit" name="submit" value="submit" class="button">submit</button>
+	<button type="reset" name="reset" value="reset" class="button">reset</button>
+</form>
+</fieldset>
+</body>
+</html>

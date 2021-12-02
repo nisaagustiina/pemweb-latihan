@@ -1,0 +1,14 @@
+/* text styling : color (nama,hexadesimal(#000fff),rgb( , , ,)),text align(left,right,center,justify),text indent(px,%),
+text decoration(none,underline,overline,line through),text transform(none,lowercase,uppercase,capitalize),letter spacing,word spacing; */
+
+h1{
+	color: #2adfef;
+	text-transform: uppercase;
+}
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}

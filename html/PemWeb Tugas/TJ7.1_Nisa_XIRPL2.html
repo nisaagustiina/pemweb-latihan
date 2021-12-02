@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsheet7.1</title>
+</head>
+<body>
+	<script language="JavaScript">
+		function hitung(){
+			var r = parseInt(document.getElementById('r').value);
+			var hasil = 3.14*r*r;
+			document.getElementById("hasil").value=hasil;
+		}
+	</script><center>
+	<script language="JavaScript">
+		function jumlah(){
+			var r = parseInt(document.getElementById('r').value);
+			var t = parseInt(document.getElementById('t').value);
+			var hasil1 = 3.14*r*r*t;
+			document.getElementById("hasil1").value=hasil1;
+		}
+	</script><center>
+		<script language="JavaScript">
+		function ratarata(){
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+			var c = parseInt(document.getElementById('c').value);
+			var d = parseInt(document.getElementById('d').value);
+			var e = parseInt(document.getElementById('e').value);
+			var f = parseInt(document.getElementById('f').value);
+			var g = parseInt(document.getElementById('g').value);
+			var h = parseInt(document.getElementById('h').value);
+			var i = parseInt(document.getElementById('i').value);
+			var j = parseInt(document.getElementById('j').value);
+			var hasill = a+b+c+d+e+f+g+h+i+j/10;
+			document.getElementById("hasill").value=hasill;
+		}
+	</script><center>
+
+<form >
+	<p>Luas Lingkaran</p>
+	<input type="text" id="r" placeholder="jari-jari"><br>
+	<input type="text" id="hasil" placeholder="hasil" disabled=><br>
+	<input type="button" id="button" value="hitung" onclick="hitung()">
+</form>
+	<br>
+<form>
+	<p>Luas Tabung</p>
+	<input type="text" id="r" placeholder="jari-jari">
+	<input type="text" id="t" placeholder="tinggi"><br>
+	<input type="text" id="hasil1" placeholder="hasil" disabled=><br>
+	<input type="button" id="button" value="jumlah" onclick="jumlah()">
+</form>
+	<br>
+	<form>
+		<p>Nilai Rata-Rata</p>
+		<input type="text" id="a" placeholder="angka ke-1"><br>
+		<input type="text" id="b" placeholder="angka ke-2"><br>
+		<input type="text" id="c" placeholder="angka ke-3"><br>
+		<input type="text" id="d" placeholder="angka ke-4"><br>
+		<input type="text" id="e" placeholder="angka ke-5"><br>
+		<input type="text" id="f" placeholder="angka ke-6"><br>
+		<input type="text" id="g" placeholder="angka ke-7"><br>
+		<input type="text" id="h" placeholder="angka ke-8"><br>
+		<input type="text" id="i" placeholder="angka ke-9"><br>
+		<input type="text" id="j" placeholder="angka ke-10"><br>
+		<input type="text" id="hasill" placeholder="hasill" disabled=><br>
+		<input type="button" id="button" value="ratarata" onclick="ratarata()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/*background color,background image,background position(top left/right/center,center left/center/right,
+bottom left/right/center,x% y%,x-pos,y-pos),background repeat*/
+body{
+	background:lightblue url(gambar/logo1.jpg) top center no-repeat;
+}
+
+/*shorthand : color (url) position repeat;

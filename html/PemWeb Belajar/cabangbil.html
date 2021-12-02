@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script language="javascript">
+	<!--
+function tanyabil(){
+	var bil = parseFloat(document.fform.bilangan.value);
+	var jenis = " ";
+	if(isNaN(bil))
+	{
+		alert("Anda belum memasukan bilangan");
+	}
+	else
+	{
+		if(bil>0)
+		{
+			jenis=" adalah bil positif";
+		}
+		else if (bil < 0)
+		{
+			jenis=" adalah bil negatif";
+		}
+		else
+		{
+			jenis=" adalah not";
+		}
+		alert(bil + "" +jenis)
+	}
+}	
+//--.
+</script>
+
+<form name="fform">
+	<h2>Bilangan negatif,nol,atau positif??</h2>
+	<p>Msukan bilangan : <input type="text" size="11" name="bilangan"><br><br><br>
+		<input type="button" value="tanya" onclick="tanyabil()">
+		<input type="reset" value="ulang"></p>
+</form>
+</body>
+</html>

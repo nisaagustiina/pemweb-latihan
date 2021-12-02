@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsheet8.1</title>
+</head>
+<body bgcolor="lightblue" >
+<script>
+	function cari(){
+	var mobil = ["Lamborghini","Ferarri","Audi","Bugatti","Citroen","Chevrolet","Jaguar","Mercedes Benz","BMW","Shelby"];
+	var e = parseInt(document.getElementById('e').value);
+    var f = mobil[e - 1];
+    document.getElementById('tampil').innerHTML = f;
+	console.log(mobil);
+	}
+</script>
+	<div align="center">
+	<h3>Pencarian Element</h3>
+ 	<form name="fform">
+    <input type="text=" id ="e" name="text"  placeholder="Masukan Pencarian">
+ 	<input type="button" onclick="cari() "value="Cari"> 
+ 	</form>
+ 	<p id="tampil">Data Akan Tampil Disini</p>
+	</div>
+</body>
+</html>
